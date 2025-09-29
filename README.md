@@ -50,5 +50,28 @@
 
 ## 🚀 사용법
 
-설정 파일들을 원하는 프로젝트에 복사하여 사용할 수 있습니다.
+### 설정 파일 복사
+
+`command.sh` 스크립트를 사용하여 설정 파일들을 원하는 프로젝트에 쉽게 복사할 수 있습니다.
+
+```bash
+# 스크립트 실행
+./command.sh
+```
+
+### Zsh Alias 설정
+
+더 편리한 사용을 위해 zsh 설정에 alias를 추가하세요:
+
+```bash
+# ~/.zshrc 파일에 추가
+alias claude-setup="$HOME/my-claude-code-settings/command.sh"
+```
+
+설정 적용:
+```bash
+source ~/.zshrc
+```
+
+이제 어디서든 `claude-setup` 명령어로 Claude Code 설정을 복사할 수 있습니다.
 
